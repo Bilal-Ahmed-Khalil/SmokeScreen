@@ -40,8 +40,3 @@ Here’s a tailored GitHub description for your final year project **SMOKE SCREE
 /visuals      → Architecture diagrams and dashboards  
 ```
 
-
-
----
-
-Let me know if you’d like help writing the actual README.md file or setting up your GitHub repository structure!
