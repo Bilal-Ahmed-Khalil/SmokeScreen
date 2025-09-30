@@ -1,6 +1,3 @@
-Here’s a tailored GitHub description for your final year project **SMOKE SCREEN**, suitable for your repository’s README or project overview:
-
----
 
 ## 🔐 SMOKE SCREEN – Cybersecurity Deception Platform
 
