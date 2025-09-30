@@ -1,0 +1,23 @@
+
+STEP WISE COMMANDS:
+	
+	pip install watchdog
+	pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
+
+### NOW IMPORT THE DECOY TO THE CONTAINER 
+( I hosted a ftp server on ubuntu machine
+to transfer to the container)
+
+	wget http://192.168.95.134:8000/home/Bilal/Downloads/cyto-camera.zip
+	wget http://192.168.95.134:8000/cyto-camera.zip
+	sudo apt update
+	sudo apt install pip
+	sudo apt install unzip
+	zip -r 
+	pip install flask
+	pip install watchdog
+	chmod +x /root/firealarm/send_logs.sh
+	chmod +x /root/cyto-camera/send_logs.sh
+	chmod +x /root/cyto-camera/sens_logs.py
+	chmod +x /root/cyto-camera/main_1.py
+	chmod +x /root/cyto-camera/main1.py
