@@ -1,0 +1,80 @@
+[
+    {
+        "timestamp": "2024-12-18 15:58:33",
+        "action": "Login attempt: login successful",
+        "ip_address": "127.0.0.1",
+        "port": 50270
+    },
+    {
+        "timestamp": "2024-12-18 15:58:35",
+        "action": "camera-off",
+        "ip_address": "127.0.0.1",
+        "port": 50294
+    },
+    {
+        "timestamp": "2024-12-18 15:58:36",
+        "action": "camera-on",
+        "ip_address": "127.0.0.1",
+        "port": 50310
+    },
+    {
+        "timestamp": "2024-12-18 15:58:36",
+        "action": "camera-off",
+        "ip_address": "127.0.0.1",
+        "port": 50324
+    },
+    {
+        "timestamp": "2024-12-18 15:58:36",
+        "action": "camera-on",
+        "ip_address": "127.0.0.1",
+        "port": 50332
+    },
+    {
+        "timestamp": "2024-12-18 15:58:36",
+        "action": "camera-off",
+        "ip_address": "127.0.0.1",
+        "port": 50336
+    },
+    {
+        "timestamp": "2024-12-18 16:04:04",
+        "action": "Login attempt: login successful",
+        "ip_address": "127.0.0.1",
+        "port": 36572
+    },
+    {
+        "timestamp": "2024-12-18 16:04:44",
+        "action": "Login attempt: login successful",
+        "ip_address": "127.0.0.1",
+        "port": 58090
+    },
+    {
+        "timestamp": "2024-12-18 16:05:58",
+        "action": "Login attempt: login successful",
+        "ip_address": "127.0.0.1",
+        "port": 33524
+    },
+    {
+        "timestamp": "2024-12-18 16:06:05",
+        "action": "Login attempt: login successful",
+        "ip_address": "127.0.0.1",
+        "port": 59686
+    },
+    {
+        "timestamp": "2024-12-18 16:06:10",
+        "action": "Directory traversal attempt to http://127.0.0.1:5000/style.css",
+        "ip_address": "127.0.0.1",
+        "port": 34326
+    },
+    {
+        "timestamp": "2024-12-18 16:06:13",
+        "action": "Login attempt: login successful",
+        "ip_address": "127.0.0.1",
+        "port": 34338
+    },
+    {
+        "timestamp": "2024-12-18 16:07:03",
+        "action": "Login attempt: login successful",
+        "ip_address": "127.0.0.1",
+        "port": 46092
+    }
+]
