@@ -1,0 +1,95 @@
+/* General styles */
+body {
+    background-color: #f4f7f9;
+    font-family: "Arial", sans-serif;
+    color: #333;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Card styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+/* Button styles */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* General text styling for visibility */
+.text-center {
+    color: #ffffff; /* Bright white text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add shadow for contrast */
+}
+
+/* Button styling */
+.btn {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    border: 1px solid #00bfff; /* Border color matches the theme */
+    color: #00bfff; /* Button text color */
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff; /* White text on hover */
+}
+

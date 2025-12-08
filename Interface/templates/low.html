@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center">Low Interactive Honeypots</h1>
+<div class="row mt-4">
+    {% for decoy in decoys %}
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ decoy.id }}</h5>
+                <p>Status: <span id="status-{{ decoy.id }}" style="color: {{ 'green' if decoy.status == 'active' else 'red' }}">{{ decoy.status }}</span></p>
+                <button class="btn btn-success" onclick="toggleDecoy('low', '{{ decoy.id }}', 'on')">Activate</button>
+                <button class="btn btn-danger" onclick="toggleDecoy('low', '{{ decoy.id }}', 'off')">Deactivate</button>
+                <button class="btn btn-info" onclick="viewDetails('low', '{{ decoy.id }}')">Details</button>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
