@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid py-4 animated fadeInUp">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-white header-glow"><i class="bi bi-shield-fill-check text-info me-2"></i>Low Interactive Honeypots</h1>
+        <span class="badge bg-info text-dark p-2 px-3">Monitoring Mode</span>
+    </div>
+
+    <div class="row">
+        {% for decoy in decoys %}
+        <div class="col-md-4 mb-4">
+            <div class="glass-card border-low h-100">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <h5 class="card-title text-white mb-0">{{ decoy.id }}</h5>
+                        <div class="status-indicator">
+                            <span id="status-{{ decoy.id }}" class="small fw-bold" style="color: {{ '#00f2ff' if decoy.status == 'active' else '#ff4d4d' }}">
+                                <i class="bi bi-circle-fill me-1" style="font-size: 8px;"></i> {{ decoy.status | upper }}
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-white-50 small mb-4">Node Type: Service Emulation</p>
+                    
+                    <div class="d-grid gap-2">
+                        <div class="btn-group">
+                            <button class="btn btn-outline-success btn-sm" onclick="toggleDecoy('low', '{{ decoy.id }}', 'on')">Activate</button>
+                            <button class="btn btn-outline-danger btn-sm" onclick="toggleDecoy('low', '{{ decoy.id }}', 'off')">Deactivate</button>
+                        </div>
+                        <button class="btn btn-info w-100 fw-bold" onclick="viewDetails('low', '{{ decoy.id }}')">
+                            <i class="bi bi-search me-1"></i> View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
