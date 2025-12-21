@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Alarm Control Panel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fire Alarm Control Panel</h1>
+
+        <!-- Status Indicator -->
+        <div class="status-indicator" id="statusIndicator">
+            <span>Status: <span id="statusText">Inactive</span></span>
+        </div>
+
+        <!-- Temperature and Smoke Indicators -->
+        <div class="sensor-indicators">
+            <div class="sensor">
+                <span>Temperature: <span id="temperature">20°C</span></span>
+            </div>
+            <div class="sensor">
+                <span>Smoke Level: <span id="smokeLevel">Normal</span></span>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button class="control-button" id="alarmButton">Activate Alarm</button>
+            <button class="control-button" id="resetButton">Reset Alarm</button>
+            <button class="control-button" id="counterMeasuresButton">Initiate Countermeasures</button>
+            <button class="control-button" id="callFireBrigadeButton">Call Fire Brigade</button>
+            <button class="control-button" id="callEmergencyButton">Call Emergency Services</button>
+        </div>
+
+        <!-- Precautionary Measures -->
+        <div class="precautionary-measures">
+            <h2>Precautionary Measures</h2>
+            <ul>
+                <li>Ensure all exit doors are accessible.</li>
+                <li>Do not use elevators during a fire.</li>
+                <li>Follow the nearest exit route.</li>
+                <li>If trapped, signal from a window for help.</li>
+                <li>Cover your mouth with a cloth if smoke is present.</li>
+            </ul>
+        </div>
+
+        <!-- Activity Log -->
+        <div class="log-container">
+            <h2>Activity Log</h2>
+            <ul id="activityLog"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
