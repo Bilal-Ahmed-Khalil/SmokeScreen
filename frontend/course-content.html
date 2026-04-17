@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Content - LMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="dashboard.html" class="text-indigo-600 hover:text-indigo-800 font-bold flex items-center gap-2">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <button onclick="logout()" class="text-gray-500 hover:text-red-600 text-sm font-medium">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-8">
+            <h1 id="course-title-display" class="text-3xl font-extrabold text-gray-900 mb-4">Loading Course...</h1>
+            <p id="course-desc-display" class="text-gray-600 text-lg leading-relaxed"></p>
+        </div>
+
+        <div id="add-content-section" class="hidden mb-10 bg-indigo-50 rounded-xl border border-indigo-100 p-6 shadow-inner">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-indigo-600 text-white p-2 rounded-lg">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h2 class="text-xl font-bold text-indigo-900">Instructor Tools</h2>
+            </div>
+
+            <div class="grid gap-4 mb-8">
+                <input type="text" id="module-title" placeholder="Enter Module Title (e.g., Week 1: Introduction)" 
+                       class="w-full p-3 rounded-lg border-gray-300 border focus:ring-2 focus:ring-indigo-500 outline-none">
+                <textarea id="module-content" placeholder="Enter detailed module content..." rows="3"
+                          class="w-full p-3 rounded-lg border-gray-300 border focus:ring-2 focus:ring-indigo-500 outline-none"></textarea>
+                <button onclick="addModule()" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-plus-circle"></i> Publish Module
+                </button>
+            </div>
+
+            <div id="upload-section" class="border-t border-indigo-200 pt-6">
+                <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                    <i class="fas fa-file-upload text-gray-500"></i> Upload Course Materials
+                </h3>
+                <div class="flex gap-4">
+                    <input type="file" id="file-upload" class="block w-full text-sm text-gray-500
+                        file:mr-4 file:py-2 file:px-4
+                        file:rounded-full file:border-0
+                        file:text-sm file:font-semibold
+                        file:bg-indigo-100 file:text-indigo-700
+                        hover:file:bg-indigo-200">
+                    <button onclick="uploadFile()" class="bg-gray-800 text-white font-bold py-2 px-6 rounded-lg hover:bg-black transition shadow-lg">
+                        Upload
+                    </button>
+                </div>
+                <p class="text-xs text-gray-500 mt-2">Allowed types: PDF, DOCX, PPTX. Max size: 10MB.</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-2 mb-6">
+            <i class="fas fa-book-open text-gray-400"></i>
+            <h2 class="text-xl font-bold text-gray-800">Course Syllabus</h2>
+        </div>
+        
+        <div id="modules-container" class="space-y-6">
+            </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
